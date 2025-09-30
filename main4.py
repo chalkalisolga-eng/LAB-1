@@ -1,7 +1,8 @@
-# Вхідні дані
-numbers = [24.04, 2.012, 0.46]
+# Ввід дійсного додатного числа
+number = float(input("Введіть додатне дійсне число: "))
 
-for num in numbers:
-    frac = num - int(num)         
-# віднімаємо цілу частину
-    print(frac)
+# Знаходимо дробову частину
+fractional_part = number - int(number)
+
+# Вивід результату
+print(f"Дробова частина числа: {fractional_part:.3f}")
