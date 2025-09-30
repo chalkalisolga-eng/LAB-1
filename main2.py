@@ -1,10 +1,13 @@
-# ввести швидкість автомобіля
-speed = int(input())
 
-# Визначити проміжки часу
-time_intervals = [6, 10, 15]
+# Ввід швидкості
+speed = float(input("Введіть швидкість автомобіля (км/год): "))
 
-# Р70озрахувати відстань
-for time in time_intervals:
-    distance = speed * time
-    print(distance)
+# Обчислення
+distance_6 = speed * 6
+distance_10 = speed * 10
+distance_15 = speed * 15
+
+# Вивід результатів
+print("Відстань за 6 годин:", distance_6, "км")
+print("Відстань за 10 годин:", distance_10, "км")
+print("Відстань за 15 годин:", distance_15, "км")
